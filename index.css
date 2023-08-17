@@ -1,0 +1,70 @@
+/* hard reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* global variables */
+:root {
+  --background: linear-gradient(to top, #010f1c, #00008bf4, #a6e6ff, #e3f1f7)
+    no-repeat center center/cover;
+
+  --white: #e3f1f7;
+  --skyblue: #a6e6ff;
+  --navyblue: #00008bf4;
+  --midnightblue: #010f1c;
+  --purple: #890bff;
+  --border: 1px solid #63768b;
+}
+
+.index__body {
+  min-height: 1000vh;
+  background: var(--background);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+  border: var(--border);
+}
+
+button.dark {
+  background-color: var(--navyblue);
+  color: var(--white);
+}
+
+button.light {
+  color: var(--midnightblue);
+  background-color: var(--white);
+}
+
+footer {
+  width: 100%;
+  min-height: 70vh;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__gradient {
+  flex: 0.1;
+  background: linear-gradient(to bottom, var(--midnightblue), black);
+}
+
+.footer__main {
+  position: relative;
+  flex: 0.9;
+  background: url(./images/guillermo-ferla-kEEl9csCutg-unsplash.jpg) no-repeat
+    center center/cover;
+}
+
+.footer__main .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
