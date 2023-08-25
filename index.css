@@ -19,7 +19,8 @@
 }
 
 .index__body {
-  min-height: 1000vh;
+  /* min-height: 500vh; */
+  background-size: cover;
   background: var(--background);
 }
 
@@ -36,9 +37,20 @@ button.dark {
   color: var(--white);
 }
 
+button.dark:hover {
+  background: var(--skyblue);
+  color: var(--midnightblue);
+  border: none;
+}
+
 button.light {
   color: var(--midnightblue);
   background-color: var(--white);
+}
+button.light:hover {
+  background: var(--midnightblue);
+  color: var(--white);
+  border: none;
 }
 
 footer {
