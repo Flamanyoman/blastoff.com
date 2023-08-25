@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        .containers{
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        button.accordion{
+            width: 100%;
+            background-color: whitesmoke;
+            border: none;
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 18px;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.2s linear;
+        }
+        button.accordion::after{
+            content: "\f150";
+            float: right;
+        }
+        button.accordion.is-open::after{
+            content: "\f056";
+        }
+        button.accordion:hover, button.accordion.is-open{
+            background-color: #ddd;
+        }
+        .accordion-content{
+            background-color: white;
+            border-left: 1px solid whitesmoke;
+            border-right: 1px solid whitesmoke;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-in-out;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <h1>You can also search for</h1>
+        <button class="accordion">NASCOMSOFT EMBEDED</button>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis labore dolorem et explicabo! Voluptatum alias dolore eos possimus eligendi dolorem, magnam id ea consequuntur facilis laudantium quidem, eius ullam eaque. Expedita mollitia quas repudiandae minus maxime reiciendis ad dolorem a necessitatibus inventore! Saepe sunt ratione iusto nihil accusantium voluptatum deleniti sed magnam ipsum eius commodi, explicabo impedit quae at.</p>
+            <a href="#">Read More</a>
+        </div>
+        <button class="accordion">Zutayah</button>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis labore dolorem et explicabo! Voluptatum alias dolore eos possimus eligendi dolorem, magnam id ea consequuntur facilis laudantium quidem, eius ullam eaque. Expedita mollitia quas repudiandae minus maxime reiciendis ad dolorem a necessitatibus inventore! Saepe sunt ratione iusto nihil accusantium voluptatum deleniti sed magnam ipsum eius commodi, explicabo impedit quae at.</p>
+            <a href="#">Read More</a>
+        </div>
+        <button class="accordion">Early Child Training</button>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis labore dolorem et explicabo! Voluptatum alias dolore eos possimus eligendi dolorem, magnam id ea consequuntur facilis laudantium quidem, eius ullam eaque. Expedita mollitia quas repudiandae minus maxime reiciendis ad dolorem a necessitatibus inventore! Saepe sunt ratione iusto nihil accusantium voluptatum deleniti sed magnam ipsum eius commodi, explicabo impedit quae at.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    <script>
+        const accordionbtns = document.querySelectorAll(".accordion");
+        accordionbtns.forEach(accordion =>{
+            accordion.onclick = function(){
+                this.classList.toggle("is-open")
+                let content = this.nextElementSibling
+                if(content.style.maxHeight){
+                    content.style.maxHeight = null
+                }else{
+                    content.style.maxHeight = content.scrollHeight + "px"
+                }
+            }
+        })
+    </script>
+</body>
+</html>
