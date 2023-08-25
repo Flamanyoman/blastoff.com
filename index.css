@@ -27,7 +27,7 @@ a {
   --background: linear-gradient(to top, #010f1c, #00008bf4, #a6e6ff, #e3f1f7)
     no-repeat center center/cover;
 
-  --white: #c2c2c2;
+  --white: #ebebeb;
 
   --skyblue: #a6e6ff;
   --navyblue: #00008bf4;
@@ -46,6 +46,7 @@ a {
 .index__body {
   min-height: 200vh;
   background: var(--background);
+  padding: 20px 0;
 }
 
 .gradient__bar {
