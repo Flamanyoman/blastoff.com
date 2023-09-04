@@ -77,6 +77,7 @@ input {
 button.dark {
   background-color: var(--navyblue);
   color: var(--white);
+  border: none;
 }
 
 button.dark:hover {
@@ -88,6 +89,7 @@ button.dark:hover {
 button.light {
   color: var(--midnightblue);
   background-color: var(--white);
+  border: none;
 }
 button.light:hover {
   background: var(--midnightblue);
@@ -118,7 +120,7 @@ button.light:hover {
 
 body {
   font-size: 16px;
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
 }
 body header {
   width: 70%;
@@ -193,7 +195,7 @@ body header nav ul a:hover {
   color: #e3f1f7;
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   body header {
     width: 100%;
     top: 0;
@@ -284,6 +286,7 @@ footer a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.637);
   display: flex;
+  padding: 0 10px;
 }
 
 .overlay .footer__main-left,
@@ -451,6 +454,7 @@ footer a {
     transform: rotate(360deg);
   }
 }
+
 .rocket {
   background-color: var(--white);
   height: 50px;
@@ -601,7 +605,7 @@ footer a {
 }
 
 .footer__search {
-  flex: 0.1;
+  height: 60px;
   display: flex;
   justify-content: flex-end;
 }
@@ -619,7 +623,7 @@ footer input {
 }
 
 .hr__link a {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .hr__link p {
@@ -645,4 +649,32 @@ footer input {
 .link__group {
   display: flex;
   flex-direction: column;
+}
+
+/* FOOTER PAGE FOR TABLETS */
+
+@media screen and (max-width: 768px) {
+  .overlay .footer__main-middle {
+    flex: 1;
+    background: transparent;
+    z-index: 2;
+  }
+
+  .overlay .footer__main-right {
+    position: absolute;
+    width: 100%;
+    flex: 0;
+  }
+
+  .overlay .footer__main-left {
+    display: none;
+  }
+
+  footer input {
+    width: 180px;
+  }
+
+  .footer__lastlinks span a {
+    font-size: 12px;
+  }
 }
