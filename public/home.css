@@ -396,7 +396,6 @@ a {
   /* min-height: 500vh; */
   background-size: cover;
   background: var(--background);
-  padding: 1.25rem 0;
 }
 .error {
   max-width: 100%;
@@ -582,7 +581,6 @@ body header nav ul a:hover {
   }
   body header nav {
     width: 100%;
-    padding: 0.7rem 0;
     display: flex;
     justify-content: space-between;
   }
@@ -610,7 +608,7 @@ body header nav ul a:hover {
     visibility: hidden;
     position: absolute;
     right: 0;
-    top: 6.5625rem;
+    top: 5.1875rem;
     width: 100%;
     background: #010f1c;
     display: flex;
@@ -642,7 +640,7 @@ footer a {
 }
 
 .footer__gradient {
-  flex: 0.1;
+  height: 8.5vh;
   background: linear-gradient(to bottom, var(--midnightblue), black);
 }
 
@@ -651,15 +649,30 @@ footer a {
   flex: 0.9;
   background: url(./images/guillermo-ferla-kEEl9csCutg-unsplash.jpg) no-repeat
     center center/cover;
+  overflow: hidden;
 }
 
-.footer__main .overlay {
-  position: absolute;
+.footer__main::before {
+  content: '';
+  display: block;
+  background-color: rgba(0, 0, 0, 0.637);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.637);
+  overflow-y: hidden;
+  pointer-events: none;
+  padding: 4rem 0;
+  position: absolute;
+}
+
+.footer__main .overlay {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
   display: flex;
   padding: 0 0.625rem;
 }
@@ -876,58 +889,58 @@ footer a {
 
 .footer__moon.footer__small {
   width: 5.625rem;
-  height: 90px;
+  height: 5.625rem;
 }
 
 .crater.footer__small {
-  height: 16px;
-  width: 16px;
+  height: 1rem;
+  width: 1rem;
 }
 
 .crater.footer__small:before {
-  height: 13px;
-  width: 13px;
-  top: 1.1px;
-  left: 3.7px;
+  height: 0.8125rem;
+  width: 0.8125rem;
+  top: 0.06875rem;
+  left: 0.23125rem;
 }
 
 .crater-1.footer__small {
-  top: 17px;
-  left: 48px;
+  top: 1.0625rem;
+  left: 3rem;
   transform: scale(0.47);
 }
 
 .crater-2.footer__small {
-  bottom: 8.5px;
-  left: 32.5px;
+  bottom: 0.53125rem;
+  left: 2.03125rem;
   transform: scale(0.32);
 }
 
 .crater-3.footer__small {
-  left: 8.5px;
+  left: 0.53125rem;
   transform: scale(0.3.75);
 }
 
 .crater-4.footer__small {
-  left: 54.5px;
-  top: 22px;
+  left: 3.40625rem;
+  top: 1.375rem;
   transform: scale(0.6);
 }
 
 .crater-5.footer__small {
-  left: 17.5px;
-  bottom: 2.2px;
+  left: 1.09375rem;
+  bottom: 0.1375rem;
   transform: scale(0.36);
 }
 
 .footer__shadow.footer__small {
-  height: 98px;
-  width: 98px;
-  box-shadow: 21px 0 0 5px #00000026;
+  height: 6.125rem;
+  width: 6.125rem;
+  box-shadow: 1.3125rem 0 0 0.3125rem #00000026;
   border-radius: 50%;
   position: relative;
-  bottom: 80px;
-  right: 25px;
+  bottom: 5rem;
+  right: 1.5625rem;
 }
 
 .moon__color1 {
@@ -945,8 +958,8 @@ footer a {
 }
 
 .orbit2 {
-  height: 150px;
-  width: 150px;
+  height: 9.375rem;
+  width: 9.375rem;
   border-radius: 50%;
   -webkit-animation: spin 60s infinite linear;
   animation: spin 60s infinite linear;
@@ -954,19 +967,19 @@ footer a {
 
 @-webkit-keyframes planetOrbit {
   from {
-    transform: translateX(150px) rotate(0deg);
+    transform: translateX(9.375rem) rotate(0deg);
   }
   to {
-    transform: translateX(150px) rotate(360deg);
+    transform: translateX(9.375rem) rotate(360deg);
   }
 }
 
 @keyframes planetOrbit {
   from {
-    transform: translateX(150px) rotate(0deg);
+    transform: translateX(9.375rem) rotate(0deg);
   }
   to {
-    transform: translateX(150px) rotate(360deg);
+    transform: translateX(9.375rem) rotate(360deg);
   }
 }
 
@@ -980,30 +993,30 @@ footer a {
 }
 
 .footer__search {
-  height: 60px;
+  height: 3.75rem;
   display: flex;
   justify-content: flex-end;
 }
 
 footer input {
-  margin-right: 10px;
+  margin-right: 0.625rem;
   background-color: rgba(0, 0, 0, 0.301);
-  width: 250px;
+  width: 15.625rem;
   color: var(--skyblue);
 }
 
 .footer__links {
   flex: 0.7;
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 
 .hr__link a {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .hr__link p {
   width: 90%;
-  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
 }
 
 .footer__lastlinks {
@@ -1046,11 +1059,11 @@ footer input {
   }
 
   footer input {
-    width: 180px;
+    width: 11.25rem;
   }
 
   .footer__lastlinks span a {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
@@ -1066,7 +1079,7 @@ footer input {
   --navyblue: #00008bf4;
   --midnightblue: #010f1c;
   --purple: #890bff;
-  --border: 1px solid #63768b;
+  --border: 0.0625rem solid #63768b;
   --grey: #8899ac;
 
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -1082,19 +1095,19 @@ footer input {
 .library__search {
   display: flex;
   justify-content: space-between;
-  width: 330px;
+  width: 20.625rem;
   margin: auto;
 }
 
 .library__longcard {
-  margin: 0 auto 40px auto;
+  margin: 0 auto 2.5rem auto;
   background: var(--purple);
   color: var(--white);
-  width: 900px;
-  height: 210px;
-  border-radius: 5px;
+  width: 56.25rem;
+  height: 13.125rem;
+  border-radius: 0.3125rem;
   display: flex;
-  box-shadow: 0 4px 4px 0 #00000080;
+  box-shadow: 0 0.25rem 0.25rem 0 #00000080;
 }
 
 .library__emptyplot,
@@ -1110,8 +1123,8 @@ img.library__picture {
 .library__emptyplot svg.booksvg1 {
   width: 18.75rem;
   height: 18.75rem;
-  top: -105px;
-  left: -135px;
+  top: -6.5625rem;
+  left: -8.4375rem;
 }
 
 .library__loncard-center {
@@ -1123,7 +1136,7 @@ img.library__picture {
 }
 
 .library__display {
-  width: 800px;
+  width: 50rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1131,19 +1144,19 @@ img.library__picture {
 }
 
 .library__holder {
-  margin: 12px 0;
-  width: 250px;
-  height: 200px;
-  box-shadow: 0 4px 4px 0 #00000080;
+  margin: 0.75rem 0;
+  width: 15.625rem;
+  height: 12.5rem;
+  box-shadow: 0 0.25rem 0.25rem 0 #00000080;
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
 
 .library__holder:hover {
-  box-shadow: 0 8px 16px 0 #00000080;
+  box-shadow: 0 0.5rem 1rem 0 #00000080;
 }
 
 .library__shelf {
@@ -1160,9 +1173,9 @@ img.library__picture {
   justify-content: center;
   background: var(--white);
   flex: 0.25;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 0.3125rem 0.3125rem;
   color: var(--grey);
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: bolder;
   text-align: center;
 }
@@ -1170,8 +1183,8 @@ img.library__picture {
 /* this is the book div  */
 .book {
   position: absolute;
-  top: 73px;
-  left: 78.2px;
+  top: 4.5625rem;
+  left: 4.8875rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1179,20 +1192,20 @@ img.library__picture {
 
 svg.booksvg1 {
   position: absolute;
-  top: -30px;
-  left: -45px;
+  top: -1.875rem;
+  left: -2.8125rem;
 }
 
 svg.booksvg2 {
   position: absolute;
-  bottom: -60px;
-  left: -20px;
+  bottom: -3.75rem;
+  left: -1.25rem;
 }
 
 svg.booksvg3 {
   position: absolute;
-  bottom: -50px;
-  right: -30px;
+  bottom: -3.125rem;
+  right: -1.875rem;
 }
 
 .library__holder:hover .cover {
@@ -1216,22 +1229,22 @@ svg.booksvg3 {
 
 .cover,
 .black-cover {
-  height: 108px;
-  width: 93.6px;
-  border-radius: 0.72px 7.2px 7.2px 0.72px;
+  height: 6.75rem;
+  width: 5.85rem;
+  border-radius: 0.045rem 0.45rem 0.45rem 0.045rem;
   position: absolute;
-  box-shadow: 1px 1px 10px rgba(37, 37, 37, 0.384);
+  box-shadow: 0.0625rem 0.0625rem 0.625rem rgba(37, 37, 37, 0.384);
   transform: rotateX(10deg);
   transform-origin: center left;
 }
 
 .page,
 .last-page {
-  height: 100.8px;
-  width: 90px;
+  height: 6.3rem;
+  width: 5.625rem;
   background: var(--white);
   position: absolute;
-  border-radius: 0.72px 7.2px 7.2px 0.72px;
+  border-radius: 0.045rem 0.45rem 0.45rem 0.045rem;
   transform: rotateX(20deg);
   z-index: -1;
   transform-origin: center left;
@@ -1285,7 +1298,7 @@ svg.booksvg3 {
 }
 
 .last-page h4 {
-  font-size: 7px;
+  font-size: 0.4375rem;
 }
 
 .library__holder.mathematics {
@@ -1397,7 +1410,7 @@ svg.booksvg3 {
 }
 
 .library__oceonfloor {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   width: 100%;
   height: 18.75rem;
   display: flex;
@@ -1415,7 +1428,7 @@ svg.fish {
 
 @-webkit-keyframes swim {
   0% {
-    margin-left: -235px;
+    margin-left: -14.6875rem;
   }
   90% {
     margin-left: 100%;
@@ -1427,7 +1440,7 @@ svg.fish {
 
 @keyframes swim {
   0% {
-    margin-left: -235px;
+    margin-left: -14.6875rem;
   }
   70% {
     margin-left: 100%;
@@ -1438,9 +1451,9 @@ svg.fish {
 }
 
 .fish {
-  width: 235px;
-  height: 104px;
-  margin-left: -235px;
+  width: 14.6875rem;
+  height: 6.5rem;
+  margin-left: -14.6875rem;
   position: absolute;
   animation: swim 20s;
   -webkit-animation: swim 20s;
@@ -1494,10 +1507,10 @@ svg #fish6 {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
   }
   75% {
-    transform: translateY(-3px);
+    transform: translateY(-0.1875rem);
   }
 }
 @keyframes bounce {
@@ -1507,10 +1520,10 @@ svg #fish6 {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
   }
   75% {
-    transform: translateY(-3px);
+    transform: translateY(-0.1875rem);
   }
 }
 
@@ -1518,10 +1531,10 @@ svg #fish6 {
 .ocean::before {
   background-color: white;
   width: 120%;
-  height: 120px;
+  height: 7.5rem;
   position: absolute;
   content: '';
-  top: -80px;
+  top: -5rem;
   left: -10%;
   border-radius: 100%;
   -webkit-animation: waves 10s ease infinite;
@@ -1530,7 +1543,7 @@ svg #fish6 {
 }
 
 .ocean::before {
-  top: -60px;
+  top: -3.75rem;
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
   opacity: 0.1;
@@ -1558,8 +1571,8 @@ svg #fish6 {
 }
 
 .bubbles {
-  min-width: 900px;
-  height: 200px;
+  min-width: 56.25rem;
+  height: 12.5rem;
   -webkit-animation: bubbles 10s linear infinite;
   animation: bubbles 10s linear infinite;
 }
@@ -1585,8 +1598,8 @@ svg #fish6 {
 }
 
 .bubbles span {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 100%;
   position: absolute;
   background-color: white;
@@ -1616,8 +1629,8 @@ svg #fish6 {
 }
 
 .bubbles span:nth-child(1) {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   opacity: 0.5;
   left: 10%;
   -webkit-animation-delay: 3s;
@@ -1628,8 +1641,8 @@ svg #fish6 {
 }
 
 .bubbles span:nth-child(2) {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   opacity: 0.5;
   left: 40%;
   -webkit-animation-delay: 1s;
@@ -1640,8 +1653,8 @@ svg #fish6 {
 }
 
 .bubbles span:nth-child(3) {
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   opacity: 0.5;
   left: 30%;
   -webkit-animation-delay: 5s;
@@ -1652,8 +1665,8 @@ svg #fish6 {
 }
 
 .bubbles span:nth-child(4) {
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
   opacity: 0.5;
   left: 40%;
   -webkit-animation-delay: 8s;
@@ -1664,54 +1677,54 @@ svg #fish6 {
 }
 
 .bubbles span:nth-child(5) {
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   left: 60%;
   -webkit-animation: bubbles-animation 15s ease-in-out 10s infinite;
   animation: bubbles-animation 15s ease-in-out 10s infinite;
 }
 
 .bubbles span:nth-child(6) {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   left: 80%;
   -webkit-animation: bubbles-animation 30s ease-in-out 3s infinite;
   animation: bubbles-animation 30s ease-in-out 3s infinite;
 }
 
 .bubbles span:nth-child(7) {
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   left: 90%;
   -webkit-animation: bubbles-animation 25s ease-in-out infinite;
   animation: bubbles-animation 25s ease-in-out infinite;
 }
 
 .bubbles span:nth-child(8) {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   left: 50%;
   -webkit-animation: bubbles-animation 10s ease-in-out infinite;
   animation: bubbles-animation 10s ease-in-out infinite;
 }
 
 .fun__fish {
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
   border-radius: 100%;
   background-color: orange;
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  box-shadow: inset 0px -6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -0.375rem 0 rgba(0, 0, 0, 0.1);
   -webkit-animation: fun__fish 40s ease-in infinite;
   animation: fun__fish 40s ease-in infinite;
 }
 
 @-webkit-keyframes fun__fish {
   0% {
-    left: calc(100% + 30px);
+    left: calc(100% + 1.875rem);
     top: 60%;
   }
   50% {
@@ -1725,7 +1738,7 @@ svg #fish6 {
 
 @keyframes fun__fish {
   0% {
-    left: calc(100% + 30px);
+    left: calc(100% + 1.875rem);
     top: 60%;
   }
   50% {
@@ -1740,15 +1753,15 @@ svg #fish6 {
 /* fun__fish tail */
 .fun__fish::after,
 .fun__fish::before {
-  width: 50px;
-  height: 50px;
-  border: 1px solid white;
-  border-radius: 10px;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.0625rem solid white;
+  border-radius: 0.625rem;
   background: inherit;
   content: '';
   position: absolute;
   top: 30%;
-  right: -20px;
+  right: -1.25rem;
   transform: rotate(-20deg);
   z-index: -1;
   -webkit-animation: tail 2s ease infinite;
@@ -1763,20 +1776,20 @@ svg #fish6 {
 @-webkit-keyframes tail {
   0%,
   100% {
-    right: -20px;
+    right: -1.25rem;
   }
   50% {
-    right: -10px;
+    right: -0.625rem;
   }
 }
 
 @keyframes tail {
   0%,
   100% {
-    right: -20px;
+    right: -1.25rem;
   }
   50% {
-    right: -10px;
+    right: -0.625rem;
   }
 }
 
@@ -1791,33 +1804,33 @@ svg #fish6 {
 .fun__fish span:nth-child(1),
 .fun__fish span:nth-child(2) {
   border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background-color: white;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.1);
-  top: 20px;
+  box-shadow: inset 0 -0.3125rem 0 rgba(0, 0, 0, 0.1);
+  top: 1.25rem;
   z-index: -2;
 }
 
 .fun__fish span:nth-child(2) {
   z-index: 0;
-  left: 35px;
-  top: 25px;
+  left: 2.1875rem;
+  top: 1.5625rem;
 }
 
 /* eyes - black part */
 .fun__fish span:nth-child(1)::after,
 .fun__fish span:nth-child(2)::after {
   border-radius: 100%;
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   background-color: #2a2a2a;
   content: '';
   position: absolute;
   z-index: 1;
-  top: 6px;
-  left: 6px;
-  box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.5);
+  top: 0.375rem;
+  left: 0.375rem;
+  box-shadow: inset 0rem 0.125rem 0rem rgba(255, 255, 255, 0.5);
   -webkit-animation: eyes 4s ease infinite;
   animation: eyes 4s ease infinite;
 }
@@ -1825,35 +1838,35 @@ svg #fish6 {
 @-webkit-keyframes eyes {
   0%,
   100% {
-    top: 4px;
+    top: 0.25rem;
   }
   50% {
-    top: 10px;
+    top: 0.625rem;
   }
 }
 
 @keyframes eyes {
   0%,
   100% {
-    top: 4px;
+    top: 0.25rem;
   }
   50% {
-    top: 10px;
+    top: 0.625rem;
   }
 }
 
 /* mouth */
 .fun__fish span:nth-child(3) {
   border-radius: 100%;
-  width: 25px;
-  height: 15px;
+  width: 1.5625rem;
+  height: 0.9375rem;
   background-color: brown;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.3);
-  top: 50px;
-  left: -5px;
+  box-shadow: inset 0rem -0.3125rem 0rem rgba(0, 0, 0, 0.3);
+  top: 3.125rem;
+  left: -0.3125rem;
   z-index: 1;
   transform: rotate(5deg);
-  border: solid 5px orange;
+  border: solid 0.3125rem orange;
   -webkit-animation: mouth 4s ease infinite;
   animation: mouth 4s ease infinite;
 }
@@ -1861,24 +1874,24 @@ svg #fish6 {
 @-webkit-keyframes mouth {
   0%,
   100% {
-    height: 25px;
-    width: 15px;
+    height: 1.5625rem;
+    width: 0.9375rem;
   }
   50% {
-    height: 15px;
-    width: 8px;
+    height: 0.9375rem;
+    width: 0.5rem;
   }
 }
 
 @keyframes mouth {
   0%,
   100% {
-    height: 25px;
-    width: 15px;
+    height: 1.5625rem;
+    width: 0.9375rem;
   }
   50% {
-    height: 15px;
-    width: 8px;
+    height: 0.9375rem;
+    width: 0.5rem;
   }
 }
 
@@ -1887,12 +1900,12 @@ svg #fish6 {
 .fun__fish span:nth-child(5),
 .fun__fish span:nth-child(6) {
   border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background-color: white;
-  box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.3);
-  top: 20px;
-  left: -30px;
+  box-shadow: inset 0rem 0.3125rem 0rem rgba(0, 0, 0, 0.3);
+  top: 1.25rem;
+  left: -1.875rem;
   z-index: -2;
   opacity: 0.3;
   -webkit-animation: fun__fishbubbles 4s ease infinite;
@@ -1903,8 +1916,8 @@ svg #fish6 {
 .fun__fish span:nth-child(5) {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .fun__fish span:nth-child(6) {
@@ -1918,16 +1931,16 @@ svg #fish6 {
   0% {
     width: 0;
     height: 0;
-    top: 70px;
-    left: 2px;
+    top: 4.375rem;
+    left: 0.125rem;
   }
 
   50% {
-    left: -20px;
+    left: -1.25rem;
   }
 
   100% {
-    top: -80px;
+    top: -5rem;
     opacity: 0;
   }
 }
@@ -1936,16 +1949,16 @@ svg #fish6 {
   0% {
     width: 0;
     height: 0;
-    top: 70px;
-    left: 2px;
+    top: 4.375rem;
+    left: 0.125rem;
   }
 
   50% {
-    left: -20px;
+    left: -1.25rem;
   }
 
   100% {
-    top: -80px;
+    top: -5rem;
     opacity: 0;
   }
 }
@@ -1955,7 +1968,7 @@ svg #fish6 {
   .library__longcard {
     margin: 2rem auto;
     width: 90%;
-    height: 500px;
+    height: 31.25rem;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -1976,7 +1989,7 @@ svg #fish6 {
   .library__loncard-center h3 {
     font-size: 1.5rem;
     text-align: center;
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   .library__display {
