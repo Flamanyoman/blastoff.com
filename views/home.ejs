@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <div class="index__body">
+
+      <div>
+    
+      <%- include('./partials/header.ejs') %>
+      <span id="intersect"></span>
+
+      <section class="home__section-one">
+        <div class="home__container">
+          <div class="home__text">
+            <h1>Welcome to an extraordinary world of LEARNING AND FUN!</h1>
+            <p>
+              Join us on a thrilling journey filled with stories of bravery,
+              educative books, and modern day kids games.
+            </p>
+            <div class="btn">
+              <button class="dark">Visit our blog</button>
+              <button class="dark">About Us</button>
+            </div>
+          </div>
+          <div class="home__video">
+            <div class="animate">
+              <!-- <div class="color">
+                <img src="../images/kuku.jpg" alt="" srcset="" />
+              </div> -->
+              <svg
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="90%"
+                id="blobSvg"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style="stop-color: rgb(76, 161, 175)"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      style="stop-color: rgb(196, 224, 229)"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient)">
+                  <animate
+                    attributeName="d"
+                    dur="10000ms"
+                    repeatCount="indefinite"
+                    values="M437.5,298Q416,346,379,377.5Q342,409,296,448.5Q250,488,204.5,448Q159,408,122.5,376.5Q86,345,54.5,297.5Q23,250,34.5,191Q46,132,102,111.5Q158,91,204,51.5Q250,12,312.5,23Q375,34,408,87Q441,140,450,195Q459,250,437.5,298Z;
+                  M461,305.5Q442,361,403,404Q364,447,307,449.5Q250,452,192,452Q134,452,110.5,398Q87,344,68.5,297Q50,250,58,197Q66,144,108.5,111.5Q151,79,200.5,49.5Q250,20,296.5,54.5Q343,89,374,124.5Q405,160,442.5,205Q480,250,461,305.5Z;
+                  M426,300Q423,350,382.5,380Q342,410,296,423.5Q250,437,191.5,444.5Q133,452,94.5,407Q56,362,35,306Q14,250,32.5,192.5Q51,135,105.5,114Q160,93,205,73.5Q250,54,295,74Q340,94,396,113.5Q452,133,440.5,191.5Q429,250,426,300Z;
+                  M431.5,295Q406,340,383,390Q360,440,305,445Q250,450,198.5,439Q147,428,115.5,387Q84,346,53,298Q22,250,28.5,188Q35,126,92.5,101.5Q150,77,200,50Q250,23,300,49.5Q350,76,406,102Q462,128,459.5,189Q457,250,431.5,295Z;
+                  M461,309.5Q456,369,415,417Q374,465,312,482Q250,499,195,470Q140,441,93.5,404Q47,367,33.5,308.5Q20,250,37.5,194Q55,138,92.5,90.5Q130,43,190,25.5Q250,8,295,51Q340,94,373.5,126.5Q407,159,436.5,204.5Q466,250,461,309.5Z;
+                  M437.5,298Q416,346,379,377.5Q342,409,296,448.5Q250,488,204.5,448Q159,408,122.5,376.5Q86,345,54.5,297.5Q23,250,34.5,191Q46,132,102,111.5Q158,91,204,51.5Q250,12,312.5,23Q375,34,408,87Q441,140,450,195Q459,250,437.5,298Z"
+                  ></animate>
+                </path>
+
+                <svg
+                  viewBox="0 0 500 500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="100%"
+                  id="blobSvg"
+                >
+                  <defs>
+                    <clipPath id="shape">
+                      <path fill="#d1d8e0">
+                        <animate
+                          attributeName="d"
+                          dur="10000ms"
+                          repeatCount="indefinite"
+                          values="M452.5,300Q406,350,364.5,380.5Q323,411,274,417Q225,423,170,414Q115,405,82.5,357Q50,309,71,256.5Q92,204,112,159Q132,114,175,71Q218,28,277,45Q336,62,363.5,111Q391,160,445,205Q499,250,452.5,300Z;
+                        M418,298Q400,346,358,370.5Q316,395,269,418.5Q222,442,164.5,428.5Q107,415,101.5,355Q96,295,85,246.5Q74,198,91,142Q108,86,164,64Q220,42,283,40.5Q346,39,392,84Q438,129,437,189.5Q436,250,418,298Z;
+                        M441.5,316.5Q458,383,386.5,387.5Q315,392,267,430Q219,468,154,452Q89,436,94.5,365Q100,294,64.5,239.5Q29,185,88,158.5Q147,132,183.5,85.5Q220,39,279.5,47.5Q339,56,390,91.5Q441,127,433,188.5Q425,250,441.5,316.5Z;
+                        M444,305.5Q422,361,379,399Q336,437,280,433.5Q224,430,167.5,420Q111,410,65,364Q19,318,38.5,256Q58,194,100.5,160Q143,126,183.5,97.5Q224,69,275.5,75Q327,81,369,114Q411,147,438.5,198.5Q466,250,444,305.5Z;
+                        M452.5,300Q406,350,364.5,380.5Q323,411,274,417Q225,423,170,414Q115,405,82.5,357Q50,309,71,256.5Q92,204,112,159Q132,114,175,71Q218,28,277,45Q336,62,363.5,111Q391,160,445,205Q499,250,452.5,300Z"
+                        ></animate>
+                      </path>
+                    </clipPath>
+                  </defs>
+                  <image
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    clip-path="url(#shape)"
+                    xlink:href="https://images.unsplash.com/photo-1554721299-e0b8aa7666ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    preserveAspectRatio="none"
+                  ></image>
+                </svg>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home__section-two">
+        <div class="what-we-do">
+          <h2>What We Do</h2>
+          <div class="container">
+            <div class="content">
+              <i class="fa-solid fa-hands-holding-child fa-3x"></i>
+              <p>
+                In our colorful world, we celebrate the uniqueness of every
+                child. Our blog promotes inclusivity, tolerance, and the idea
+                that differences are what make us all superheroes in our own
+                way.
+              </p>
+            </div>
+            <div class="content">
+              <i class="fa-solid fa-lightbulb fa-3x"></i>
+              <p>
+                We believe that learning can be an exciting adventure. Through
+                engaging stories, fascinating facts, and interactive activities,
+                we aim to make learning a thrilling journey for kids of all
+                ages.
+              </p>
+            </div>
+            <div class="content">
+              <i class="fa-solid fa-heart fa-3x"></i>
+              <p>
+                We believe that caring is one of the most magical things in the
+                world. So, let's all be superheroes of caring! Let's fill the
+                world with love. Together, we can make this world a brighter and
+                happier place.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="spotlight">
+          <svg
+            class="bottom"
+            viewBox="0 0 300 300"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            id="blobSvg"
+          >
+            <path fill="#a6e6ff">
+              <animate
+                attributeName="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z;
+                M456,293.5Q430,337,407.5,378Q385,419,341.5,439.5Q298,460,253.5,444.5Q209,429,166,419Q123,409,89.5,376.5Q56,344,32,297Q8,250,38,206Q68,162,92.5,122.5Q117,83,157.5,53.5Q198,24,248,32.5Q298,41,333.5,71Q369,101,420,122.5Q471,144,476.5,197Q482,250,456,293.5Z;
+                M463.5,293.5Q431,337,398.5,366Q366,395,334,437Q302,479,256.5,450Q211,421,155,430Q99,439,90.5,385Q82,331,48.5,290.5Q15,250,30.5,201Q46,152,77,112.5Q108,73,159,73Q210,73,255,51.5Q300,30,349.5,46.5Q399,63,430,105.5Q461,148,478.5,199Q496,250,463.5,293.5Z;
+                M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z"
+              ></animate>
+            </path>
+          </svg>
+          <svg
+            class="top"
+            viewBox="0 0 300 300"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            id="blobSvg"
+          >
+            <path fill="#a6e6ff">
+              <animate
+                attributeName="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z;
+                M456,293.5Q430,337,407.5,378Q385,419,341.5,439.5Q298,460,253.5,444.5Q209,429,166,419Q123,409,89.5,376.5Q56,344,32,297Q8,250,38,206Q68,162,92.5,122.5Q117,83,157.5,53.5Q198,24,248,32.5Q298,41,333.5,71Q369,101,420,122.5Q471,144,476.5,197Q482,250,456,293.5Z;
+                M463.5,293.5Q431,337,398.5,366Q366,395,334,437Q302,479,256.5,450Q211,421,155,430Q99,439,90.5,385Q82,331,48.5,290.5Q15,250,30.5,201Q46,152,77,112.5Q108,73,159,73Q210,73,255,51.5Q300,30,349.5,46.5Q399,63,430,105.5Q461,148,478.5,199Q496,250,463.5,293.5Z;
+                M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z"
+              ></animate>
+            </path>
+          </svg>
+          <div class="content">
+            <h3 class="heading">SPOTLIGHT</h3>
+            <h3>Proven to strengthen essential literacy skills</h3>
+            <p>
+              Dive into enchanting tales, explore far-off lands, and meet
+              unforgettable characters with our handpicked book reviews and
+              stories that will transport you to worlds beyond your wildest
+              dreams.
+            </p>
+            <button class="dark">Explore library</button>
+          </div>
+          <div class="cartoon">
+            <img src="../images/cartoon.png" alt="Cartoon" />
+          </div>
+        </div>
+      </section>
+
+      <section id="home__section_three">
+        <h2>Discover Various Areas of Interest we Cover</h2>
+
+        <article>
+          <div class="image">
+            <svg
+              class="outer"
+              viewBox="0 0 600 600"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100%"
+              id="blobSvg"
+            >
+              <path fill="#a6e6ff">
+                <animate
+                  attributeName="d"
+                  dur="10000ms"
+                  repeatCount="indefinite"
+                  values="M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z;
+                M456,293.5Q430,337,407.5,378Q385,419,341.5,439.5Q298,460,253.5,444.5Q209,429,166,419Q123,409,89.5,376.5Q56,344,32,297Q8,250,38,206Q68,162,92.5,122.5Q117,83,157.5,53.5Q198,24,248,32.5Q298,41,333.5,71Q369,101,420,122.5Q471,144,476.5,197Q482,250,456,293.5Z;
+                M463.5,293.5Q431,337,398.5,366Q366,395,334,437Q302,479,256.5,450Q211,421,155,430Q99,439,90.5,385Q82,331,48.5,290.5Q15,250,30.5,201Q46,152,77,112.5Q108,73,159,73Q210,73,255,51.5Q300,30,349.5,46.5Q399,63,430,105.5Q461,148,478.5,199Q496,250,463.5,293.5Z;
+                M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z"
+                ></animate>
+              </path>
+
+              <svg
+                class="inner"
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100%"
+                id="blobSvg"
+              >
+                <defs>
+                  <clipPath id="shape">
+                    <path fill="#d1d8e0">
+                      <animate
+                        attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+                        values="M346.5,303.5Q336,357,281,355.5Q226,354,187,326.5Q148,299,150.5,251Q153,203,182,140.5Q211,78,280.5,101.5Q350,125,353.5,187.5Q357,250,346.5,303.5Z;"
+                      ></animate>
+                    </path>
+                  </clipPath>
+                </defs>
+                <image
+                class=""
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  clip-path="url(#shape)" 
+                  xlink:href="https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1896&q=80"
+                  preserveAspectRatio="none"
+                ></image>
+              </svg>
+            </svg>
+          </div>
+
+          <div class="areas__text dark_text">
+            <h4>For Preschool pupils</h4>
+            <h3>BlastOFF (2-4)</h3>
+            <p>
+              We're going to have a colorful adventure as we learn all about
+              colors! Colors are everywhere around us, and they make our world
+              so bright and beautiful.
+            </p>
+            <span class="foot">Elevating daily teachings</span>
+          </div>
+        </article>
+
+        <article>
+          <div class="areas__text">
+            <h4>For Elementary school pupils</h4>
+            <h3>BlastOFF (4-9)</h3>
+            <p>
+              We're going to embark on an incredible journey back in time to
+              explore the amazing world of dinosaurs. Dinosaurs were gigantic
+              and mysterious creatures that once roamed the Earth. Let's dig
+              into their fascinating world!
+            </p>
+            <span class="foot">Elevating daily teachings</span>
+          </div>
+
+          <div class="image">
+            <svg
+              class="outer"
+              viewBox="0 0 600 600"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100%"
+              id="blobSvg"
+            >
+              <path fill="#a6e6ff">
+                <animate
+                  attributeName="d"
+                  dur="10000ms"
+                  repeatCount="indefinite"
+                  values="M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z;
+                M456,293.5Q430,337,407.5,378Q385,419,341.5,439.5Q298,460,253.5,444.5Q209,429,166,419Q123,409,89.5,376.5Q56,344,32,297Q8,250,38,206Q68,162,92.5,122.5Q117,83,157.5,53.5Q198,24,248,32.5Q298,41,333.5,71Q369,101,420,122.5Q471,144,476.5,197Q482,250,456,293.5Z;
+                M463.5,293.5Q431,337,398.5,366Q366,395,334,437Q302,479,256.5,450Q211,421,155,430Q99,439,90.5,385Q82,331,48.5,290.5Q15,250,30.5,201Q46,152,77,112.5Q108,73,159,73Q210,73,255,51.5Q300,30,349.5,46.5Q399,63,430,105.5Q461,148,478.5,199Q496,250,463.5,293.5Z;
+                M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z"
+                ></animate>
+              </path>
+
+              <svg
+                class="inner"
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100%"
+                id="blobSvg"
+              >
+                <defs>
+                  <clipPath id="shape">
+                    <path fill="#d1d8e0">
+                      <animate
+                        attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+                        values="M346.5,303.5Q336,357,281,355.5Q226,354,187,326.5Q148,299,150.5,251Q153,203,182,140.5Q211,78,280.5,101.5Q350,125,353.5,187.5Q357,250,346.5,303.5Z;"
+                      ></animate>
+                    </path>
+                  </clipPath>
+                </defs>
+                <image
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  clip-path="url(#shape)"
+                  xlink:href="https://images.pexels.com/photos/8617899/pexels-photo-8617899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  preserveAspectRatio="none"
+                ></image>
+              </svg>
+            </svg>
+          </div>
+        </article>
+
+        <article>
+          <div class="image">
+            <svg
+              class="outer"
+              viewBox="0 0 600 600"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100%"
+              id="blobSvg"
+            >
+              <path fill="#a6e6ff">
+                <animate
+                  attributeName="d"
+                  dur="10000ms"
+                  repeatCount="indefinite"
+                  values="M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z;
+                M456,293.5Q430,337,407.5,378Q385,419,341.5,439.5Q298,460,253.5,444.5Q209,429,166,419Q123,409,89.5,376.5Q56,344,32,297Q8,250,38,206Q68,162,92.5,122.5Q117,83,157.5,53.5Q198,24,248,32.5Q298,41,333.5,71Q369,101,420,122.5Q471,144,476.5,197Q482,250,456,293.5Z;
+                M463.5,293.5Q431,337,398.5,366Q366,395,334,437Q302,479,256.5,450Q211,421,155,430Q99,439,90.5,385Q82,331,48.5,290.5Q15,250,30.5,201Q46,152,77,112.5Q108,73,159,73Q210,73,255,51.5Q300,30,349.5,46.5Q399,63,430,105.5Q461,148,478.5,199Q496,250,463.5,293.5Z;
+                M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z"
+                ></animate>
+              </path>
+
+              <svg
+                class="inner"
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100%"
+                id="blobSvg"
+              >
+                <defs>
+                  <clipPath id="shape">
+                    <path fill="#d1d8e0">
+                      <animate
+                        attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+                        values="M346.5,303.5Q336,357,281,355.5Q226,354,187,326.5Q148,299,150.5,251Q153,203,182,140.5Q211,78,280.5,101.5Q350,125,353.5,187.5Q357,250,346.5,303.5Z;"
+                      ></animate>
+                    </path>
+                  </clipPath>
+                </defs>
+                <image
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  clip-path="url(#shape)"
+                  xlink:href="https://images.pexels.com/photos/8617961/pexels-photo-8617961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  preserveAspectRatio="none"
+                ></image>
+              </svg>
+            </svg>
+          </div>
+          <div class="areas__text">
+            <h4>For Middle school student</h4>
+            <h3>BlastOFF (9-12)</h3>
+            <p>
+              Welcome, curious minds and young explorers, to a world of endless
+              discovery and knowledge! we believe that learning is a grand
+              adventure, and the world is your playground. Whether you're
+              passionate about science, excited about history, or just love a
+              good story, you've come to the right place.
+            </p>
+            <span class="foot">Elevating daily teachings</span>
+          </div>
+        </article>
+        <article>
+          <div class="areas__text">
+            <h4>For everyone</h4>
+            <h3>BlastOFF (all Age group)</h3>
+            <p>
+              Our goal is to inspire, educate, and entertain you. We invite you
+              to join us on this exciting journey where we'll unravel mysteries,
+              explore new horizons, and embrace the joy of knowing more about
+              our incredible world.
+            </p>
+            <span class="foot">Elevating daily teachings</span>
+          </div>
+
+          <div class="image">
+            <svg
+              class="outer"
+              viewBox="0 0 600 600"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100%"
+              id="blobSvg"
+            >
+              <path fill="#a6e6ff">
+                <animate
+                  attributeName="d"
+                  dur="10000ms"
+                  repeatCount="indefinite"
+                  values="M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z;
+                M456,293.5Q430,337,407.5,378Q385,419,341.5,439.5Q298,460,253.5,444.5Q209,429,166,419Q123,409,89.5,376.5Q56,344,32,297Q8,250,38,206Q68,162,92.5,122.5Q117,83,157.5,53.5Q198,24,248,32.5Q298,41,333.5,71Q369,101,420,122.5Q471,144,476.5,197Q482,250,456,293.5Z;
+                M463.5,293.5Q431,337,398.5,366Q366,395,334,437Q302,479,256.5,450Q211,421,155,430Q99,439,90.5,385Q82,331,48.5,290.5Q15,250,30.5,201Q46,152,77,112.5Q108,73,159,73Q210,73,255,51.5Q300,30,349.5,46.5Q399,63,430,105.5Q461,148,478.5,199Q496,250,463.5,293.5Z;
+                M456,289.5Q415,329,402.5,377.5Q390,426,342.5,436Q295,446,245,469.5Q195,493,147.5,465Q100,437,92,383.5Q84,330,54.5,290Q25,250,48,207Q71,164,97,127Q123,90,165,77Q207,64,248,71.5Q289,79,342.5,73Q396,67,407.5,118Q419,169,458,209.5Q497,250,456,289.5Z"
+                ></animate>
+              </path>
+
+              <svg
+                class="inner"
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100%"
+                id="blobSvg"
+              >
+                <defs>
+                  <clipPath id="shape">
+                    <path fill="#d1d8e0">
+                      <animate
+                        attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+                        values="M346.5,303.5Q336,357,281,355.5Q226,354,187,326.5Q148,299,150.5,251Q153,203,182,140.5Q211,78,280.5,101.5Q350,125,353.5,187.5Q357,250,346.5,303.5Z;"
+                      ></animate>
+                    </path>
+                  </clipPath>
+                </defs>
+                <image
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  clip-path="url(#shape)"
+                  xlink:href="https://images.pexels.com/photos/9490248/pexels-photo-9490248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  preserveAspectRatio="none"
+                ></image>
+              </svg>
+            </svg>
+          </div>
+        </article>
+      </section>
+      
+      <%- include('./partials/oceanFloor.ejs') %>
+      </div>
+
+    </div>
+    <%- include('./partials/footer.ejs') %>
+
+  </body>
+</html>
