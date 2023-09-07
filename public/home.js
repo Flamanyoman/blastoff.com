@@ -23,36 +23,33 @@
 // }
 
 const heading = document.querySelector('#intersect');
-const nav = document.querySelector('header')
+const nav = document.querySelector('header');
 
 const observer = new IntersectionObserver(
-    (enteries) => {
-        if (enteries[0].isIntersecting) {
-            nav.classList.remove('onScroll');
-        }
-        else {
-            nav.classList.add('onScroll');
-        }
-    },
-    {
-        root: null,
-        rootMargin: "0%",
-        threhold: 1,
+  (enteries) => {
+    if (enteries[0].isIntersecting) {
+      nav.classList.remove('onScroll');
+    } else {
+      nav.classList.add('onScroll');
     }
+  },
+  {
+    root: null,
+    rootMargin: '0%',
+    threhold: 1,
+  }
 );
-observer.observe(heading);
 
+observer.observe(heading);
 
 let menu = document.querySelector('ul');
 let btn = document.querySelector('.click');
 
 let visible = false;
 
-btn.addEventListener('click', function() {
-    if (!visible)
-        menu.style.visibility = 'visible';
-    else
-        menu.style.visibility = 'hidden';
+btn.addEventListener('click', function () {
+  if (!visible) menu.style.visibility = 'visible';
+  else menu.style.visibility = 'hidden';
 
-    visible = !visible;
-})
+  visible = !visible;
+});
