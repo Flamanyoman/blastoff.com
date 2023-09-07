@@ -241,6 +241,7 @@ body .home__section-two .spotlight .content button {
 }
 body .home__section-two .spotlight .content button:hover {
   background: #a6e6ff;
+  transition: all .3s ease-in;
   color: #010f1c;
 }
 body .home__section-two .spotlight .cartoon {
@@ -584,6 +585,7 @@ button.dark:hover {
   background: var(--skyblue);
   color: var(--midnightblue);
   border: none;
+  transition: all .3s ease-in;
 }
 
 button.light {
@@ -595,6 +597,7 @@ button.light:hover {
   background: var(--midnightblue);
   color: var(--white);
   border: none;
+  transition: all .3s ease-in;
 }
 
 /*  HEADER */
@@ -606,6 +609,7 @@ button.light:hover {
   top: 0;
   color: #e3f1f7;
   border-radius: 0;
+  transition: all .3s ease;
 }
 .onScroll:hover {
   background: rgba(1, 15, 28, 0.8);
@@ -1533,7 +1537,7 @@ svg.booksvg3 {
 }
 
 .cover {
-  z-index: 1;
+  z-index: 10;
   -webkit-transition: all 1.5s;
   -o-transition: all 1.5s;
   transition: all 1.5s;
@@ -1541,7 +1545,7 @@ svg.booksvg3 {
 }
 
 .black-cover {
-  z-index: -2;
+  z-index: -20;
 }
 
 .cover,
