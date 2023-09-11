@@ -25,6 +25,9 @@ app.get('/library', (req, res) => {
     res.status(200).render('library', {title: "Library"})
 })
 
+app.get('/blog', (req, res) => {
+    res.status(200).render('blog', {title: "Blog"})
+})
 app.use((req, res) => {
     res.status(404).render("404", { title: "404" });
   });
