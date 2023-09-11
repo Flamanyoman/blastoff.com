@@ -566,6 +566,14 @@ button {
   border: var(--border);
 }
 
+a.dark {
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 2.5rem;
+  cursor: pointer;
+  border: var(--border);
+}
+
 input {
   border: none;
   border-radius: 0.3125rem;
@@ -575,13 +583,13 @@ input {
   border-width: 0.3125rem;
 }
 
-button.dark {
+button.dark, a.dark {
   background-color: var(--navyblue);
   color: var(--white);
   border: none;
 }
 
-button.dark:hover {
+button.dark:hover, a.dark:hover {
   background: var(--skyblue);
   color: var(--midnightblue);
   border: none;
