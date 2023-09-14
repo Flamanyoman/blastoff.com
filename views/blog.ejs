@@ -1,151 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head.ejs') %>
+  <%- include('./partials/head.ejs') %>
 
-    <body>
+  <body>
+    <div class="index__body">
+      <div>
+        <%- include('./partials/header.ejs') %>
+        <span id="intersect"></span>
+        <div class="blog-showcase">
+          <div class="blog-left">
+            <img
+              src="../images/2015-12-0769253_photo-removebg-preview.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="../images/super-mario-removebg-preview.png"
+              alt=""
+              class="img2"
+            />
+          </div>
 
+          <div class="blog-mid">
+            <h1>ARE YOU READY FOR A BLAST???</h1>
+            <p>
+              "Welcome to our fun and fantastic blog for kids! Get ready to
+              embark on exciting adventures, discover fascinating facts, and
+              explore a world of imagination. Join us on this journey of
+              learning, laughter, and creativity. Let's dive in and make every
+              moment on this page an unforgettable one"
+            </p>
+          </div>
 
-        <div class="index__body">
-            <div>
-                <%- include('./partials/header.ejs') %>
-
-                    <div class="blog-landing">
-                        <div class="blog-showcase">
-                            <div class="blog-left">
-                                <img src=".//images/super-mario-removebg-preview.png" alt="" class="img1">
-                                <img src=".//images/2015-12-0769253_photo-removebg-preview.png" alt="" class="img2">
-                            </div>
-                            <div class="blog-mid">
-                                <h1>ARE YOU READY FOR A BLAST???</h1>
-                                <p>"Welcome to our fun and fantastic blog for kids! Get ready to embark on exciting
-                                    adventures,
-                                    discover fascinating facts, and explore a world of imagination. Join us on this
-                                    journey of
-                                    learning, laughter, and creativity. Let's dive in and make every moment on this page
-                                    an
-                                    unforgettable one"</p>
-                            </div>
-                            <div class="blog-right">
-                                <div class="blog-right-case">
-                                    <img src=".//images/2015-12-0769253_photo-removebg-preview.png" alt="" class="img1">
-                                    <img src=".//images/super-mario-removebg-preview.png" alt="" class="img2">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-games">
-                        <div class="blog-game-head">
-                            <h1>BRAIN BOOSTER GAMES</h1>
-                        </div>
-                        <div class="blog-game-types">
-                            <div class="blog-chess">
-                                <img src=".//images/Chess.jpg" alt="">
-                                <a href="#">CHESS</a>
-                            </div>
-                            <div class="blog-chess">
-                                <img src=".//images/tictoc.jpg" alt="">
-                                <a href="#">TIC-TOC</a>
-                            </div>
-                            <div class="blog-suduku">
-                                <img src=".//images/sudoku.png" alt="">
-                                <a href="#">SUDUKU</a>
-                            </div>
-                            <div class="blog-snake">
-                                <img src=".//images/snake.png" alt="">
-                                <a href="#">SNAKE & LADDER</a>
-                            </div>
-                            <div class="blog-puzzle">
-                                <img src=".//images/puzzle.jpg" alt="">
-                                <a href="#">PUZZLE</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blog-creer-section">
-
-                        <div class=" blog-career-heading">
-                            <div class="blog-career-left">
-                                <h1>CAREER CHOICES</h1>
-                                <p>Childhood is a time for exploration and self-discovery. Kids should be encouraged to
-                                    explore a
-                                    variety of interests, hobbies, and activities. Exposure to diverse experiences can
-                                    help them
-                                    identify their passions and talents. Kids should focus on building a strong
-                                    educational
-                                    foundation
-                                    while developing essential skills such as critical thinking, communication, and
-                                    problem-solving.
-                                    <br><br>
-                                    Below are some CAREER CHOICES that kids can explore and deside on what they will
-                                    like to be when
-                                    they grow up
-                                </p>
-                            </div>
-                            <div class="blog-career-right">
-                                <img src=".//images/most-job-opportunities.png" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-choices">
-                            <div class="blog-Medicine">
-                                <button class="blog-medicine-button">MEDICINE</button>
-                                <div class="blog-medicine-dropdown-content">
-                                    <a href="#">Surgeon</a>
-                                    <a href="#">Neurologist</a>
-                                    <a href="#">Pediatrician</a>
-                                    <a href="#">Psychiatrist</a>
-                                    <a href="#">Cardiologist</a>
-                                </div>
-                            </div>
-                            <div class="blog-Medicine">
-                                <button class="blog-medicine-button">ENGINEERING</button>
-                                <div class="blog-medicine-dropdown-content">
-                                    <a href="#">Civil Engineering</a>
-                                    <a href="#">Chemical Engineering</a>
-                                    <a href="#">Mechanical Engineering</a>
-                                    <a href="#">Electrical Engineering</a>
-                                    <a href="#">Computer Engineering</a>
-                                </div>
-                            </div>
-                            <div class="blog-Medicine">
-                                <button class="blog-medicine-button">TECH</button>
-                                <div class="blog-medicine-dropdown-content">
-                                    <a href="#">Computer Programming</a>
-                                    <a href="#">Data Scientist</a>
-                                    <a href="#">Machine Learing</a>
-                                    <a href="#">Artificial Inteligence</a>
-                                    <a href="#">Cybersecurity</a>
-                                </div>
-                            </div>
-                            <div class="blog-Medicine">
-                                <button class="blog-medicine-button">BUSINESS</button>
-                                <div class="blog-medicine-dropdown-content">
-                                    <a href="#">Economics</a>
-                                    <a href="#">Finance</a>
-                                    <a href="#">Human Resources</a>
-                                    <a href="#">Accounting</a>
-                                    <a href="#">Advertising</a>
-                                </div>
-                            </div>
-                            <div class="blog-Medicine">
-
-                                <button class="blog-medicine-button">ART</button>
-                                <div class="blog-medicine-dropdown-content">
-                                    <a href="#">Visual arts</a>
-                                    <a href="#">Theatre</a>
-                                    <a href="#">Fashion Design</a>
-                                    <a href="#">Graphic arts</a>
-                                    <a href="#">Fine art</a>
-                                </div>
-                            </div>
-                        </div>
-                        <%- include('./partials/oceanFloor.ejs') %>
-
-                    </div>
+          <div class="blog-right">
+            <img
+              src="../images/super-mario-removebg-preview.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="../images/2015-12-0769253_photo-removebg-preview.png"
+              alt=""
+              class="img2"
+            />
+          </div>
+        </div>
+        
+        <div class="blog-games">
+          <div class="blog-game-head">
+            <h1>BRAIN BOOSTER GAMES</h1>
+          </div>
+          <div class="blog-game-types">
+            <div class="blog-chess game-width">
+              <img src="../images/Chess.jpg" alt="" />
+              <a href="#">CHESS</a>
             </div>
-            <%- include('./partials/footer.ejs') %>
+            <div class="blog-chess game-width">
+              <img src="../images/tictoc.jpg" alt="" />
+              <a href="#">TIC-TOC</a>
+            </div>
+            <div class="blog-suduku game-width">
+              <img src="../images/sudoku.png" alt="" />
+              <a href="#">SUDUKU</a>
+            </div>
+            <div class="blog-snake game-width">
+              <img src="../images/snake.png" alt="" />
+              <a href="#">SNAKE & LADDER</a>
+            </div>
+            <div class="blog-puzzle game-width">
+              <img src="../images/puzzle.jpg" alt="" />
+              <a href="#">PUZZLE</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="blog-creer-section">
+          <div class="blog-career-heading">
+            <div class="blog-career-left">
+              <h1>CAREER CHOICES</h1>
+              <p>
+                Childhood is a time for exploration and self-discovery. Kids
+                should be encouraged to explore a variety of interests, hobbies,
+                and activities. Exposure to diverse experiences can help them
+                identify their passions and talents. Kids should focus on
+                building a strong educational foundation while developing
+                essential skills such as critical thinking, communication, and
+                problem-solving. <br /><br />
+                Below are some CAREER CHOICES that kids can explore and deside
+                on what they will like to be when they grow up
+              </p>
+            </div>
+            <div class="blog-career-right">
+              <img src="../images/most-job-opportunities.png" alt="" />
+            </div>
+          </div>
+          <div class="blog-choices">
+            <div class="blog-Medicine">
+              <button class="blog-medicine-button">MEDICINE</button>
+              <div class="blog-medicine-dropdown-content">
+                <a href="#">Surgeon</a>
+                <a href="#">Neurologist</a>
+                <a href="#">Pediatrician</a>
+                <a href="#">Psychiatrist</a>
+                <a href="#">Cardiologist</a>
+              </div>
+            </div>
+            <div class="blog-Medicine">
+              <button class="blog-medicine-button">ENGINEERING</button>
+              <div class="blog-medicine-dropdown-content">
+                <a href="#">Civil Engineering</a>
+                <a href="#">Chemical Engineering</a>
+                <a href="#">Mechanical Engineering</a>
+                <a href="#">Electrical Engineering</a>
+                <a href="#">Computer Engineering</a>
+              </div>
+            </div>
+            <div class="blog-Medicine">
+              <button class="blog-medicine-button">TECH</button>
+              <div class="blog-medicine-dropdown-content">
+                <a href="#">Computer Programming</a>
+                <a href="#">Data Scientist</a>
+                <a href="#">Machine Learing</a>
+                <a href="#">Artificial Inteligence</a>
+                <a href="#">Cybersecurity</a>
+              </div>
+            </div>
+            <div class="blog-Medicine">
+              <button class="blog-medicine-button">BUSINESS</button>
+              <div class="blog-medicine-dropdown-content">
+                <a href="#">Economics</a>
+                <a href="#">Finance</a>
+                <a href="#">Human Resources</a>
+                <a href="#">Accounting</a>
+                <a href="#">Advertising</a>
+              </div>
+            </div>
+            <div class="blog-Medicine">
+              <button class="blog-medicine-button">ART</button>
+              <div class="blog-medicine-dropdown-content">
+                <a href="#">Visual arts</a>
+                <a href="#">Theatre</a>
+                <a href="#">Fashion Design</a>
+                <a href="#">Graphic arts</a>
+                <a href="#">Fine art</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <%- include('./partials/oceanFloor.ejs') %>
+      </div>
+    </div>
 
-    </body>
-
+    <%- include('./partials/footer.ejs') %>
+  </body>
 </html>

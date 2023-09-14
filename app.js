@@ -4,7 +4,7 @@ const app = express();
 app.set('view engine', 'ejs')
 
 app.listen(process.env.PORT || 3000, ()=> {
-    console.log('app listening')
+    console.log('app listening at http://localhost:3000')
 });
 
 app.use(express.static('./public'));
