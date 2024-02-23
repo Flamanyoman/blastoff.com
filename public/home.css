@@ -2831,12 +2831,6 @@ body .about__section-two .group__services {
   cursor: pointer;
 }
 
-body .about__section-two .group__services {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
 body .about__section-two .group__services img {
   max-width: 100%;
   height: auto;
@@ -2844,20 +2838,56 @@ body .about__section-two .group__services img {
   border-radius: 6%;
 }
 
-body .about__section-two .group__services:hover {
-  background: white;
+body .about__section-two .group__services .four {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+body .about__section-two .group__services .four:hover {
+  transform: scale(1.1);
+}
+
+body .about__section-two .group__services .five {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+body .about__section-two .group__services .five:hover {
+  transform: scale(1.1);
+}
+
+body .about__section-two .group__services .six {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+body .about__section-two .group__services .six:hover {
+  transform: scale(1.1);
+}
+
+body .about__section-two .group__services .seven {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+body .about__section-two .group__services .seven:hover {
   transform: scale(1.1);
 }
 
 body .about__section-three {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   padding-top: 3rem;
   background: white;
   justify-content: space-around;
   padding-left: 200px;
   padding-right: 200px;
   overflow: hidden;
+  padding-bottom: 5rem;
 }
 
 body .about__section-three .second__image img {
@@ -2866,17 +2896,36 @@ body .about__section-three .second__image img {
   overflow: hidden;
 }
 
+body .about__section-three h2 {
+  font-size: 2.5rem;
+}
+
+body .about__section-three h2 span {
+  color: red;
+}
+
+body .about__section-three h3 {
+  font-size: 1.7rem;
+}
+
+body .about__section-three p {
+  font-size: 1rem;
+  color: red;
+  padding-bottom: 2rem;
+}
+
 body .about__section-four {
   display: flex;
   justify-content: center;
   align-items: center;
   background: skyblue;
+  padding-bottom: 3rem;
 }
 
 body .about__section-four img {
   display: grid;
   grid-template-columns: 1fr;
-  width: 100vw;
+  width: 65vw;
   height: auto;
   padding-left: 60px;
   padding-right: 60px;
@@ -2885,9 +2934,9 @@ body .about__section-four img {
 body .about__section-four h3 {
   margin-top: 30px;
   margin-bottom: 10px;
-  padding-left: 150px;
+  padding-left: 70px;
   padding-right: 150px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 body .about__section-five {
@@ -2899,6 +2948,8 @@ body .about__section-five {
   padding-left: 150px;
   padding-right: 150px;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 body .about__section-five h3 {
@@ -2915,12 +2966,15 @@ body .about__section-six {
   background: white;
   padding-left: 150px;
   padding-right: 150px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 body .about__section-six h3 {
   margin-top: 30px;
   font-weight: bolder;
   color: darkblue;
+  padding-left: 3rem;
 }
 
 body .about__section-six p {
@@ -2945,15 +2999,36 @@ body .new .newi {
   width: 100%;
 }
 
-body .new .newi {
+body .new .newi .one {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
   overflow: hidden;
 }
 
-body .new .newi:hover {
-  background: skyblue;
+body .new .newi .one:hover {
+  transform: scale(1.1);
+}
+
+body .new .newi .two {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+body .new .newi .two:hover {
+  transform: scale(1.1);
+}
+
+body .new .newi .three {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+body .new .newi .three:hover {
   transform: scale(1.1);
 }
 
