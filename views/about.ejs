@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+  <div class="index__body">
+    <div>
+      <%- include('./partials/header.ejs') %>
+      <span id="intersect"></span>
+
+      <section class="about__section-one">
+        <div class="we__are__blastoff">
+          <h1>We are BlastOFF</h1>
+          <p>We use technology to empower children all over the world and prepare them for the future. The more that they read, the more things they will know. The more that they learn, the more places they will go.</p>
+          <div class="btn">
+            <a class="dark" href="/library">Read More</a>
+          </div>
+        </div>
+        <div class="first__image">
+          <img src="/images/adams.jpg" alt="adams">
+        </div>
+      </section>
+
+      <section class="about__section-two">
+        <div class="niger__born">
+          <h3>The Trainings we offer</h3>
+        </div>
+      <div class="group__services">
+        <div>
+          <p>Music</p>
+          <img src="/images/singing.jpg" alt="singing">
+        </div>
+          <div>
+            <p>football</p>
+            <img src="/images/football.jpg" alt="football">
+          </div>
+
+          <div>
+            <p>Reading</p>
+            <img src="/images/reading.jpg" alt="reading">
+          </div>
+
+          <div>
+            <p>Swimmming</p>
+            <img src="/images/swimming.jpg" alt="swimming">
+          </div>
+        </div>
+      </section>
+
+      <section class="about__section-three">
+        <div class="founder">
+          <h2>Meet the Founder</h2>
+        </div>
+
+        <div class="second__image">
+          <img src="/images/imon.jpg" alt="imon">
+          <h3>Zoe</h3>
+          <p>Graduate of website development</p>
+        </div>
+      </section>
+
+      <section class="about__section-four">
+        <div class="team">
+          <h3>Amazing Team</h3>
+          <div class="third__image">
+            <img src="/images/group.jpg" alt="group">
+          </div>
+        </div>
+      </section>
+      
+      <section class="new">
+        <div class="newh"><h3>our recent blog post</h3></div>
+        <div class="newi" >
+          <div><img src="/images/blog2.jpg" alt="blog2"></div>
+          <div><img src="/images/blog3.jpg" alt="blog3"></div>
+          <div><img src="/images/blog5.jpg" alt="blog5"></div>
+        </div>
+
+      </section>
+
+      <section class="about__section-five">
+        <div class="vision">
+          <h3>Vision</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur praesentium cum adipisci nulla accusamus sapiente error aperiam dignissimos nihil nobis?</p>
+        </div>
+        <div class="Mission">
+          <h3>Mission</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aliquam voluptatum delectus quidem eaque unde adipisci voluptates libero iusto. Asperiores.</p>
+        </div>
+      </section>
+
+      <section class="about__section-six">
+        <h3>Our core Values</h3>
+        <div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, voluptates?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, voluptates?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, voluptates?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, voluptates?</p>
+        </div>
+      </section>
+
+      <section class="last">
+          <h2>Contact Us</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+      </section>
+      
+
+      <%- include('./partials/oceanFloor.ejs') %>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs') %>
+</html>
