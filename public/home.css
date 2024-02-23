@@ -2754,11 +2754,52 @@ body .about__section-one h1 {
   font-style: italic;
   padding-top: 3rem;
 }
+body .about__section-one {
+  overflow: hidden; /* Ensure text does not overflow */
+}
+
+body .about__section-one h1 {
+  opacity: 0;
+  transform: translateY(100%); /* Start from bottom */
+
+  /* Animation */
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 body .about__section-one p {
   font-size: 1.5rem;
   padding-left: 20px;
   font-weight: 1px;
+}
+
+body .about__section-one p {
+  opacity: 0;
+  transform: translateY(100%); /* Start from bottom */
+
+  /* Animation */
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1400px) {
@@ -2959,6 +3000,48 @@ body .about__section-five h3 {
   font-weight: bolder;
 }
 
+body .about__section-five {
+  overflow: hidden; /* Ensure text does not overflow */
+}
+
+body .about__section-five h3 {
+  opacity: 0;
+  transform: translateY(100%); /* Start from bottom */
+
+  /* Animation */
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body .about__section-five p {
+  opacity: 0;
+  transform: translateY(100%); /* Start from bottom */
+
+  /* Animation */
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body .about__section-six {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -2977,8 +3060,50 @@ body .about__section-six h3 {
   padding-left: 3rem;
 }
 
+body .about__section-six {
+  overflow: hidden; /* Ensure text does not overflow */
+}
+
+body .about__section-six h3 {
+  opacity: 0;
+  transform: translateY(100%); /* Start from bottom */
+
+  /* Animation */
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body .about__section-six p {
   padding: 10px;
+}
+
+body .about__section-six p {
+  opacity: 0;
+  transform: translateY(100%); /* Start from bottom */
+
+  /* Animation */
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 body .new .newh {
@@ -2997,6 +3122,7 @@ body .new .newi {
   padding-left: 60px;
   padding-right: 60px;
   width: 100%;
+  cursor: pointer;
 }
 
 body .new .newi .one {
