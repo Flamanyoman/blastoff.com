@@ -2433,7 +2433,8 @@ svg #fish6 {
   width: 100%;
 }
 
-.blog-left, .blog-right {
+.blog-left,
+.blog-right {
   position: relative;
   min-height: 40rem;
 }
@@ -2640,25 +2641,24 @@ svg #fish6 {
     height: 300px;
   }
 }
-  @media (max-width: 1200px){
-  .blog-mid h1{
+@media (max-width: 1200px) {
+  .blog-mid h1 {
     font-size: 2rem;
   }
-  .blog-mid p{
+  .blog-mid p {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) {
-
-
-  .blog-left .img1, .blog-right .img2 {
+  .blog-left .img1,
+  .blog-right .img2 {
     width: 300px;
     margin-top: -3rem;
   }
 
-  .blog-mid{
-   /* text-align: center; */
+  .blog-mid {
+    /* text-align: center; */
     /* align-items: center; */
     /* justify-content: center; */
     padding-left: 1rem;
@@ -2690,7 +2690,6 @@ svg #fish6 {
 
   .blog-showcase {
     padding-top: 2rem;
-
   }
 
   .blog-game-head h1 {
@@ -2730,4 +2729,289 @@ svg #fish6 {
   .blog-showcase {
     flex-wrap: wrap;
   }
+}
+
+/* about page styling  */
+body {
+  font-family: var(--font-family-monospace);
+}
+body .about__section-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
+  margin-top: 9%;
+  max-width: 100%;
+  height: auto;
+  padding: 0 15rem;
+  background: white;
+}
+
+body .about__section-one h1 {
+  font-size: 3rem;
+  padding-left: 20px;
+  font-weight: 1px;
+  margin-bottom: 0px;
+  font-style: italic;
+  padding-top: 3rem;
+}
+
+body .about__section-one p {
+  font-size: 1.5rem;
+  padding-left: 20px;
+  font-weight: 1px;
+}
+
+@media (max-width: 1400px) {
+  body .about__section-one h1 p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  body .about__section-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    place-items: center;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  body .about__section-one {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+    padding: 50px;
+  }
+}
+
+body .about__section-one .btn {
+  padding-bottom: 4rem;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+body .about__section-one .btn {
+  margin-top: 2rem;
+}
+
+body .about__section-one .first__image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  padding-top: 3rem;
+}
+
+body .about__section-two {
+  display: block;
+}
+
+body .about__section-two p {
+  margin-bottom: 10px;
+}
+
+body .about__section-two .niger__born {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+body .about__section-two .group__services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+  place-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+  cursor: pointer;
+}
+
+body .about__section-two .group__services {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+body .about__section-two .group__services img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+  border-radius: 6%;
+}
+
+body .about__section-two .group__services:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+body .about__section-three {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  background: white;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  overflow: hidden;
+}
+
+body .about__section-three .second__image img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body .about__section-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+}
+
+body .about__section-four img {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  height: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+body .about__section-four h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 1.5rem;
+}
+
+body .about__section-five {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+  background: white;
+  margin-bottom: 3rem;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
+}
+
+body .about__section-five h3 {
+  margin-top: 30px;
+  padding: 10px;
+  color: darkblue;
+  font-weight: bolder;
+}
+
+body .about__section-six {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  background: white;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+body .about__section-six h3 {
+  margin-top: 30px;
+  font-weight: bolder;
+  color: darkblue;
+}
+
+body .about__section-six p {
+  padding: 10px;
+}
+
+body .new .newh {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding-top: 6rem;
+  color: white;
+}
+
+body .new .newi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+  place-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+}
+
+body .new .newi {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+body .new .newi:hover {
+  background: skyblue;
+  transform: scale(1.1);
+}
+
+body .new .newi img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+  border-radius: 6%;
+}
+
+.last {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

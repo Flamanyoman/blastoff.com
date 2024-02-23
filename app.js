@@ -1,38 +1,41 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.set('view engine', 'ejs')
+app.set("view engine", "ejs");
 
-app.listen(process.env.PORT || 3000, ()=> {
-    console.log('app listening at http://localhost:3000')
+app.listen(process.env.PORT || 3000, () => {
+  console.log("app listening at http://localhost:3000");
 });
 
-app.use(express.static('./public'));
+app.use(express.static("./public"));
 
 const errorHandler = (error, req, res, next) => {
-    if (error) {
-        res.render('404');
-        console.log(error)
-    }
-}
+  if (error) {
+    res.render("404");
+    console.log(error);
+  }
+};
 
 // ROUTES
-app.get('/', (req, res) => {
-    res.status(200).render('home', {title: "Home"});
+app.get("/", (req, res) => {
+  res.status(200).render("home", { title: "Home" });
 });
 
-app.get('/library', (req, res) => {
-    res.status(200).render('library', {title: "Library"})
-})
+app.get("/library", (req, res) => {
+  res.status(200).render("library", { title: "Library" });
+});
 
-app.get('/blog', (req, res) => {
-    res.status(200).render('blog', {title: "Blog"})
-})
+app.get("/blog", (req, res) => {
+  res.status(200).render("blog", { title: "Blog" });
+});
+
+app.get("/about", (req, res) => {
+  res.status(200).render("about", { title: "about" });
+});
+
 app.use((req, res) => {
-    res.status(404).render("404", { title: "404" });
-  });
-
+  res.status(404).render("404", { title: "404" });
+});
 
 //   ERROR HANDLER MIDDLEWARE
-app.use(errorHandler)
-
+app.use(errorHandler);
