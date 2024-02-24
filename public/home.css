@@ -2921,20 +2921,34 @@ body .about__section-two .group__services .seven:hover {
 
 body .about__section-three {
   display: flex;
-  /* justify-content: center; */
   padding-top: 3rem;
   background: white;
   justify-content: space-around;
   padding-left: 200px;
   padding-right: 200px;
+  padding-bottom: 3rem;
   overflow: hidden;
-  padding-bottom: 5rem;
+}
+
+@media (max-width: 360px) {
+  body .about__section-three {
+    padding-top: 3rem;
+    background: white;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 body .about__section-three .second__image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
+}
+
+@media (max-width: 360px) {
+  body .about__section-three .second__image img {
+  }
 }
 
 body .about__section-three h2 {
@@ -2961,6 +2975,13 @@ body .about__section-four {
   align-items: center;
   background: skyblue;
   padding-bottom: 3rem;
+  padding-left: 4rem;
+}
+
+@media (max-width: 360px) {
+  body .about__section-four {
+    padding-left: 5.5rem;
+  }
 }
 
 body .about__section-four img {
@@ -2986,8 +3007,8 @@ body .about__section-five {
   grid-gap: 40px;
   background: white;
   margin-bottom: 3rem;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 100px;
+  padding-right: 200px;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -3042,15 +3063,33 @@ body .about__section-five p {
   }
 }
 
+@media (max-width: 360px) {
+  body .about__section-five {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+  }
+}
+
 body .about__section-six {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 30px;
   background: white;
-  padding-left: 150px;
+  padding-left: 100px;
   padding-right: 150px;
   padding-top: 2rem;
   padding-bottom: 3rem;
+}
+
+@media (max-width: 360px) {
+  body .about__section-six {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 body .about__section-six h3 {
